@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Profile from "../../assets/profile.jpg";
 
 import "./Home.css";
 
@@ -7,7 +8,12 @@ export default function Home() {
   return (
     <div className="main">
       <div className="top">
-        <h1>Top</h1>
+        <img className="profile" src={Profile} alt="Dallin Breen" />
+        <div>
+          <p>Software Developer</p>
+          <p>Gym Lover</p>
+          <p>Gamer</p>
+        </div>
       </div>
       <div className="bottom">
         <div className="section" id="software">
