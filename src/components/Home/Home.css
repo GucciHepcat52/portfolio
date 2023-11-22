@@ -30,6 +30,12 @@
     justify-content: center;
 }
 
+.link-style {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 #software {
     background-image: url("../../assets/software.jpg");
     background-size: cover;
