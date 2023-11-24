@@ -1,4 +1,4 @@
-.main {
+.home-main {
     box-sizing: border-box;
     width: 100%;
     height: 100vh;
@@ -84,17 +84,17 @@
 }
 
 #software {
-    background-image: url("../../assets/software.jpg");
+    background-image: url("../../assets/homepage/software.jpg");
     background-size: cover;
 }
 
 #fitness {
-    background-image: url("../../assets/fitness.jpg");
+    background-image: url("../../assets/homepage/fitness.jpg");
     background-size: cover;
 }
 
 #gaming {
-    background-image: url("../../assets/gaming.jpg");
+    background-image: url("../../assets/homepage/gaming.jpg");
     background-size: cover;
 }
 

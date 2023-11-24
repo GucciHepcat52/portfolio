@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Profile from "../../assets/profile.jpg";
+import Profile from "../../assets/homepage/profile.jpg";
 
 import "./Home.css";
 
 export default function Home() {
   return (
-    <div className="main">
+    <div className="home-main">
       <div className="left">
         <img className="profile" src={Profile} alt="Dallin Breen" />
       </div>
