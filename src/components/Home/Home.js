@@ -7,35 +7,38 @@ import "./Home.css";
 export default function Home() {
   return (
     <div className="main">
-      <div className="top">
+      <div className="left">
         <img className="profile" src={Profile} alt="Dallin Breen" />
-        <div>
-          <p>Software Developer</p>
-          <p>Gym Lover</p>
-          <p>Gamer</p>
-        </div>
       </div>
-      <div className="bottom">
-        <div className="section" id="software">
-          <Link to="/portfolio/software" className="link-style">
-            <div>
-              <h1>Software</h1>
-            </div>
-          </Link>
+      <div className="right">
+        <div className="title">
+          <p style={{ fontSize: "2rem" }}>Dallin Breen</p>
+          <h1 style={{ fontSize: "4rem", fontStyle: "italic" }}>
+            Software Developer
+          </h1>
         </div>
-        <div className="section" id="fitness">
-          <Link to="/portfolio/fitness" className="link-style">
-            <div>
-              <h1>Fitness</h1>
-            </div>
-          </Link>
-        </div>
-        <div className="section" id="gaming">
-          <Link to="/portfolio/gaming" className="link-style">
-            <div>
-              <h1>Gaming</h1>
-            </div>
-          </Link>
+        <div className="topics">
+          <div className="section" id="software">
+            <Link to="/portfolio/software" className="link-style">
+              <div>
+                <h1>Software</h1>
+              </div>
+            </Link>
+          </div>
+          <div className="section" id="fitness">
+            <Link to="/portfolio/fitness" className="link-style">
+              <div>
+                <h1>Fitness</h1>
+              </div>
+            </Link>
+          </div>
+          <div className="section" id="gaming">
+            <Link to="/portfolio/gaming" className="link-style">
+              <div>
+                <h1>Gaming</h1>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
