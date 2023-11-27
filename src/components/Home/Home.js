@@ -2,7 +2,14 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Fab, Modal, Box, Button } from "@mui/material";
-import { InfoOutlined } from "@mui/icons-material";
+import {
+  InfoOutlined,
+  Download,
+  Facebook,
+  Instagram,
+  Twitter,
+  GitHub,
+} from "@mui/icons-material";
 import Profile from "../../assets/homepage/profile.jpg";
 import resumé from "../../assets/homepage/Dallin Breen Resumé.pdf";
 import "./Home.css";
@@ -43,14 +50,18 @@ export default function Home() {
             style={{
               display: "flex",
               width: "100%",
-              flex: 1,
+              height: "80%",
               flexDirection: "row",
               justifyContent: "space-evenly",
               alignItems: "center",
             }}
           >
             <section>
-              <Button variant="contained">
+              <Button
+                component="label"
+                variant="contained"
+                startIcon={<Download />}
+              >
                 <a
                   href={resumé}
                   download={"Dallin Breen Resumé"}
@@ -71,6 +82,52 @@ export default function Home() {
                 </a>
               </Button>
             </section>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flex: 1,
+              width: "100%",
+              flexDirection: "row",
+              justifyContent: "center",
+            }}
+          >
+            <Button>
+              <a
+                href="https://github.com/GucciHepcat52"
+                target="blank"
+                style={{ color: "white" }}
+              >
+                <GitHub />
+              </a>
+            </Button>
+            <Button>
+              <a
+                href="https://www.facebook.com/dallin.breen"
+                target="blank"
+                style={{ color: "white" }}
+              >
+                <Facebook />
+              </a>
+            </Button>
+            <Button>
+              <a
+                href="https://www.instagram.com/dallinbreen/"
+                target="blank"
+                style={{ color: "white" }}
+              >
+                <Instagram />
+              </a>
+            </Button>
+            <Button>
+              <a
+                href="https://twitter.com/home?lang=en"
+                target="blank"
+                style={{ color: "white" }}
+              >
+                <Twitter />
+              </a>
+            </Button>
           </div>
         </Box>
       </Modal>
