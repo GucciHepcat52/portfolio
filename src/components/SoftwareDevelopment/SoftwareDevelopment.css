@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    background-color: lightgray;
 }
 
 .software-intro {
@@ -20,7 +21,7 @@
 .about-me {
     width: 100%;
     height: 40%;
-    background-color: lightgrey;
+    background-color: gray;
     opacity: 75%;
     display: flex;
     align-items: center;
@@ -28,8 +29,33 @@
 
 .software-body {
     box-sizing: border-box;
-    width: 100%;
     display: flex;
+    width: 100%;
     flex: 1;
     flex-direction: column;
+    align-items: center;
+}
+
+.project-descriptions {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#card {
+    box-sizing: border-box;
+    height: 15rem;
+    width: 25rem;
+    border: 2px solid black;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
 }
