@@ -50,7 +50,8 @@ export default function SoftwareDevelopment() {
       <div
         style={{
           boxSizing: "border-box",
-          height: "20rem",
+          // height: "20rem",
+          padding: "1rem",
           width: "100%",
           display: "flex",
           flexDirection: "row",
