@@ -136,7 +136,7 @@ export default function Home() {
         <Fab
           color="info"
           size="large"
-          disableRipple="true"
+          disableRipple={true}
           onClick={handleModal}
           style={{ position: "absolute", bottom: "20px", left: "20px" }}
         >

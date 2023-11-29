@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
+import pokemon from "../../assets/gaming/pokemon.png";
+import zelda from "../../assets/gaming/zelda.png";
+import halo from "../../assets/gaming/halo.png";
+import wow from "../../assets/gaming/world-of-warcraft.png";
 
 import "./Gaming.css";
 
@@ -38,6 +42,44 @@ export default function Gaming() {
             Return Home
           </Button>
         </Link>
+      </div>
+      <div className="favorite-franchises">
+        <section className="franchise-icon">
+          <section className="icon-box">
+            <img
+              src={pokemon}
+              alt="Pokemon"
+              style={{ objectFit: "contain", width: "100%", height: "100%" }}
+            />
+          </section>
+        </section>
+        <section className="franchise-icon">
+          <section className="icon-box">
+            <img
+              src={zelda}
+              alt="Pokemon"
+              style={{ objectFit: "contain", width: "100%", height: "100%" }}
+            />
+          </section>
+        </section>
+        <section className="franchise-icon">
+          <section className="icon-box">
+            <img
+              src={halo}
+              alt="Pokemon"
+              style={{ objectFit: "contain", width: "100%", height: "100%" }}
+            />
+          </section>
+        </section>
+        <section className="franchise-icon">
+          <section className="icon-box">
+            <img
+              src={wow}
+              alt="Pokemon"
+              style={{ objectFit: "contain", width: "100%", height: "100%" }}
+            />
+          </section>
+        </section>
       </div>
     </div>
   );

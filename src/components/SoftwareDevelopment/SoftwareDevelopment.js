@@ -47,34 +47,9 @@ export default function SoftwareDevelopment() {
           </Button>
         </Link>
       </div>
-      <div
-        style={{
-          boxSizing: "border-box",
-          // height: "20rem",
-          padding: "1rem",
-          width: "100%",
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          backgroundColor: "gray",
-        }}
-      >
-        <section
-          style={{
-            boxSizing: "border-box",
-            display: "flex",
-            flex: 1,
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <section
-            style={{
-              height: "10rem",
-              width: "10rem",
-              overflow: "hidden",
-            }}
-          >
+      <div className="favorite-technology">
+        <section className="technology-icon">
+          <section className="icon-box">
             <img
               src={react}
               alt="React Icon"
@@ -82,21 +57,8 @@ export default function SoftwareDevelopment() {
             />
           </section>
         </section>
-        <section
-          style={{
-            boxSizing: "border-box",
-            display: "flex",
-            flex: 1,
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <section
-            style={{
-              height: "10rem",
-              width: "10rem",
-            }}
-          >
+        <section className="technology-icon">
+          <section className="icon-box">
             <img
               src={node}
               alt="Node Icon"
@@ -104,21 +66,8 @@ export default function SoftwareDevelopment() {
             />
           </section>
         </section>
-        <section
-          style={{
-            boxSizing: "border-box",
-            display: "flex",
-            flex: 1,
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <section
-            style={{
-              height: "10rem",
-              width: "10rem",
-            }}
-          >
+        <section className="technology-icon">
+          <section className="icon-box">
             <img
               src={postgresql}
               alt="Postgresql Icon"
@@ -126,21 +75,8 @@ export default function SoftwareDevelopment() {
             />
           </section>
         </section>
-        <section
-          style={{
-            boxSizing: "border-box",
-            display: "flex",
-            flex: 1,
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <section
-            style={{
-              height: "10rem",
-              width: "10rem",
-            }}
-          >
+        <section className="technology-icon">
+          <section className="icon-box">
             <img
               src={gcp}
               alt="GCP Icon"
