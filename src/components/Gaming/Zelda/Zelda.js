@@ -2,10 +2,14 @@ import React from "react";
 import { Modal, Box } from "@mui/material";
 
 export default function Zelda({ status, close }) {
+  function handleBoxClick(event) {
+    event.stopPropagation();
+  }
   return (
     <Modal
       open={status}
       onClose={close}
+      slotProps={{ backdrop: { onClick: close } }}
       style={{
         display: "flex",
         alignItems: "center",
@@ -13,6 +17,7 @@ export default function Zelda({ status, close }) {
       }}
     >
       <Box
+        onClick={handleBoxClick}
         style={{
           boxSizing: "border-box",
           padding: "3rem",
