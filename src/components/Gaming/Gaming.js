@@ -44,7 +44,7 @@ export default function Gaming() {
         </Link>
       </div>
       <div className="favorite-franchises">
-        <section className="franchise-icon">
+        <section className="franchise">
           <section className="icon-box">
             <img
               src={pokemon}
@@ -53,7 +53,7 @@ export default function Gaming() {
             />
           </section>
         </section>
-        <section className="franchise-icon">
+        <section className="franchise">
           <section className="icon-box">
             <img
               src={zelda}
@@ -62,7 +62,7 @@ export default function Gaming() {
             />
           </section>
         </section>
-        <section className="franchise-icon">
+        <section className="franchise">
           <section className="icon-box">
             <img
               src={halo}
@@ -71,7 +71,7 @@ export default function Gaming() {
             />
           </section>
         </section>
-        <section className="franchise-icon">
+        <section className="franchise">
           <section className="icon-box">
             <img
               src={wow}

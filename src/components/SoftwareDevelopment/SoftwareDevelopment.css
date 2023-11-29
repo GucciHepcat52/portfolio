@@ -79,10 +79,18 @@
     background-color: white;
     height: 15rem;
     width: 25rem;
-    box-shadow: 2px 2px 4px black;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 10px;
+    transition: transform 0.3s ease, z-index 0s linear 0.3s; /* Add a transition for z-index */
+    position: relative; /* Ensure proper z-index behavior */
+    z-index: 1;
+}
+
+#card:hover {
+    transform: scale(1.02);
+    border-radius: 2%;
+    z-index: 2;
 }
