@@ -51,9 +51,9 @@
 
 #card {
     box-sizing: border-box;
+    background-color: white;
     height: 15rem;
     width: 25rem;
-    border: 2px solid black;
     box-shadow: 2px 2px 4px black;
     border-radius: 10px;
     display: flex;

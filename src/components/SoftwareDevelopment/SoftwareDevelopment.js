@@ -221,11 +221,12 @@ export default function SoftwareDevelopment() {
           <div id="card">
             <h3>Breen Chat</h3>
             <h4 style={{ fontStyle: "italic", margin: 0, padding: 0 }}>
-              React Native
+              React
             </h4>
             <p>
               A family chat app built in React Native and Firebase. Family
-              members can chat in a private family chatroom.
+              members can chat in a private family chatroom. Family can easily
+              sign in and join the chatroom whenever they like.
             </p>
             <section
               style={{
