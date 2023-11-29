@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal, Box } from "@mui/material";
 
-export default function Pokemon({ status, close }) {
+export default function WorldOfWarcraft({ status, close }) {
   return (
     <Modal
       open={status}
@@ -25,7 +25,7 @@ export default function Pokemon({ status, close }) {
           alignItems: "center",
         }}
       >
-        <h1>Pokemon</h1>
+        <h1>World Of Warcraft</h1>
       </Box>
     </Modal>
   );

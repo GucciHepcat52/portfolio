@@ -43,6 +43,7 @@
     transition: transform 0.3s ease, z-index 0s linear 0.3s; /* Add a transition for z-index */
     position: relative; /* Ensure proper z-index behavior */
     z-index: 1;
+    cursor: pointer;
 }
 
 .franchise:hover {
