@@ -57,3 +57,36 @@
     align-items: center;
     justify-content: center;
 }
+
+.game {
+    box-sizing: border-box;
+    padding: 0.5rem;
+    background-color: lightgray;
+    height: 36rem;
+    width: 35rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.game-cover {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.art {
+    height: 25rem;
+    width: 25rem;
+    object-fit: cover;
+    border: 2px solid silver;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

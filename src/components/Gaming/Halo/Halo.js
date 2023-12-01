@@ -1,5 +1,6 @@
 import React from "react";
 import { Modal, Box } from "@mui/material";
+import cover from "../../../assets/gaming/halo-3.jpg";
 
 export default function Halo({ status, close }) {
   function handleBoxClick(event) {
@@ -7,30 +8,17 @@ export default function Halo({ status, close }) {
   }
   return (
     <Modal
+      className="modal"
       open={status}
       onClose={close}
       slotProps={{ backdrop: { onClick: close } }}
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
     >
-      <Box
-        onClick={handleBoxClick}
-        style={{
-          boxSizing: "border-box",
-          padding: "3rem",
-          backgroundColor: "lightgray",
-          height: "20rem",
-          width: "35rem",
-          borderRadius: "10px",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <h1>Halo</h1>
+      <Box className="game" onClick={handleBoxClick}>
+        <div className="game-cover">
+          <h3>My favorite Halo game is:</h3>
+          <h2 style={{ fontStyle: "italic" }}>Halo 3</h2>
+          <img src={cover} alt="Halo 3" className="art" />
+        </div>
       </Box>
     </Modal>
   );
