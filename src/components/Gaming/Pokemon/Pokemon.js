@@ -6,43 +6,43 @@ import "./Pokemon.css";
 export default function Pokemon({ status, close }) {
   const [pokemon, setPokemon] = useState(null);
 
-  // useEffect(() => {
-  //   let isMounted = true;
+  useEffect(() => {
+    let isMounted = true;
 
-  //   const cachedPokemon = localStorage.getItem("cachedPokemon");
+    const cachedPokemon = localStorage.getItem("cachedPokemon");
 
-  //   if (cachedPokemon) {
-  //     setPokemon(JSON.parse(cachedPokemon));
-  //   } else {
-  //     const fetchPokemon = async () => {
-  //       try {
-  //         const response = await fetch(
-  //           "https://pokeapi.co/api/v2/pokemon/lugia"
-  //         );
-  //         if (!response.ok) {
-  //           throw new Error("Network response was not ok");
-  //         }
+    if (cachedPokemon) {
+      setPokemon(JSON.parse(cachedPokemon));
+    } else {
+      const fetchPokemon = async () => {
+        try {
+          const response = await fetch(
+            "https://pokeapi.co/api/v2/pokemon/lugia"
+          );
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
 
-  //         const result = await response.json();
+          const result = await response.json();
 
-  //         if (isMounted) {
-  //           console.log(result);
-  //           setPokemon(result);
+          if (isMounted) {
+            console.log(result);
+            setPokemon(result);
 
-  //           localStorage.setItem("cachedPokemon", JSON.stringify(result));
-  //         }
-  //       } catch (error) {
-  //         console.error("Error fetching data: ", error);
-  //       }
-  //     };
+            localStorage.setItem("cachedPokemon", JSON.stringify(result));
+          }
+        } catch (error) {
+          console.error("Error fetching data: ", error);
+        }
+      };
 
-  //     fetchPokemon();
-  //   }
+      fetchPokemon();
+    }
 
-  //   return () => {
-  //     isMounted = false;
-  //   };
-  // }, []);
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   function handleBoxClick(event) {
     event.stopPropagation();
@@ -58,14 +58,18 @@ export default function Pokemon({ status, close }) {
       <Box className="pokemon" onClick={handleBoxClick}>
         <div className="favorite-pokemon">
           <h3>My Favorite Pokemon is:</h3>
-          <section
-            className="sprite"
-            // style={{
-            //   backgroundImage: `url(${pokemon.sprites.front_default})`,
-            // }}
-          >
-            <h2 style={{ fontStyle: "italic" }}>Lugia</h2>
-          </section>
+          {pokemon ? (
+            <section
+              className="sprite"
+              style={{
+                backgroundImage: `url(${pokemon.sprites.front_default})`,
+              }}
+            >
+              <h2 style={{ fontStyle: "italic" }}>Lugia</h2>
+            </section>
+          ) : (
+            <p>...Loading</p>
+          )}
         </div>
       </Box>
     </Modal>

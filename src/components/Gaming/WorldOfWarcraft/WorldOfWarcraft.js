@@ -1,36 +1,31 @@
 import React from "react";
 import { Modal, Box } from "@mui/material";
+import "./WorldOfWarcraft.css";
 
 export default function WorldOfWarcraft({ status, close }) {
   function handleBoxClick(event) {
     event.stopPropagation();
   }
+
   return (
     <Modal
+      className="modal"
       open={status}
       onClose={close}
       slotProps={{ backdrop: { onClick: close } }}
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
     >
-      <Box
-        onClick={handleBoxClick}
-        style={{
-          boxSizing: "border-box",
-          padding: "3rem",
-          backgroundColor: "lightgray",
-          height: "20rem",
-          width: "35rem",
-          borderRadius: "10px",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <h1>World Of Warcraft</h1>
+      <Box className="character" onClick={handleBoxClick}>
+        <div className="character-profile">
+          <h3>My World of Warcraft character is:</h3>
+          <section
+            className="asset"
+            style={{
+              backgroundImage: `url(../../../../../assets/gaming/character.png)`,
+            }}
+          >
+            <h2 style={{ fontStyle: "italic" }}>Guccihepcat</h2>
+          </section>
+        </div>
       </Box>
     </Modal>
   );
