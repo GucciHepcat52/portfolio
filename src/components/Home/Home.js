@@ -121,7 +121,7 @@ export default function Home() {
             </Button>
             <Button>
               <a
-                href="https://twitter.com/home?lang=en"
+                href="https://twitter.com/GucciHepcat"
                 target="blank"
                 style={{ color: "white" }}
               >
