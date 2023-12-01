@@ -1,5 +1,7 @@
 import React from "react";
 import { Modal, Box } from "@mui/material";
+import char from "../../../assets/gaming/character.png";
+
 import "./WorldOfWarcraft.css";
 
 export default function WorldOfWarcraft({ status, close }) {
@@ -17,14 +19,8 @@ export default function WorldOfWarcraft({ status, close }) {
       <Box className="character" onClick={handleBoxClick}>
         <div className="character-profile">
           <h3>My World of Warcraft character is:</h3>
-          <section
-            className="asset"
-            style={{
-              backgroundImage: `url(../../../../../assets/gaming/character.png)`,
-            }}
-          >
-            <h2 style={{ fontStyle: "italic" }}>Guccihepcat</h2>
-          </section>
+          <h2 style={{ fontStyle: "italic" }}>Guccihepcat</h2>
+          <img src={char} alt="Guccihepcat" className="asset" />
         </div>
       </Box>
     </Modal>

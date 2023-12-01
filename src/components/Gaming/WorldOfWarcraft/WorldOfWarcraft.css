@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
 }
 
 .character-profile {
@@ -22,8 +23,9 @@
 .asset {
     height: 30rem;
     width: 20rem;
-    background-size: cover;
+    object-fit: cover;
     border: 2px solid silver;
+    border-radius: 50%;
     background-color: white;
     display: flex;
     flex-direction: column;
