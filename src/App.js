@@ -1,10 +1,32 @@
 import React, { useRef } from "react";
 import logo from "./assets/db-logo.png";
 import resumePDF from "./assets/dallin-breen-resume.pdf";
+import html from "./assets/tech-logos/html-logo.png";
+import css from "./assets/tech-logos/css-logo.png";
+import js from "./assets/tech-logos/js-logo.png";
+import react from "./assets/tech-logos/react-logo.png";
+import express from "./assets/tech-logos/express-js.png";
+import node from "./assets/tech-logos/nodejs-logo.png";
+import spring from "./assets/tech-logos/spring-logo.png";
+import java from "./assets/tech-logos/java-logo.png";
+import postgresql from "./assets/tech-logos/postgresql.png";
+import aws from "./assets/tech-logos/aws-logo.png";
 
 import "./App.css";
 
 function App() {
+  const logos = [
+    { url: html, name: "HTML" },
+    { url: css, name: "CSS" },
+    { url: js, name: "JavaScript" },
+    { url: react, name: "React" },
+    { url: express, name: "Express" },
+    { url: node, name: "Node" },
+    { url: spring, name: "Spring" },
+    { url: java, name: "Java" },
+    { url: postgresql, name: "PostgreSQL" },
+    { url: aws, name: "AWS" },
+  ];
   const homeRef = useRef(null);
   const technologyRef = useRef(null);
   const projectsRef = useRef(null);
@@ -68,8 +90,17 @@ function App() {
         </div>
       </section>
       <section className="technology" ref={technologyRef}>
-        <h1>Technology</h1>
-        <div className="technology-container"></div>
+        <div className="technology-inner">
+          <h1>TECHNOLOGY</h1>
+          <div className="technology-container">
+            {logos.map((tech, index) => (
+              <div className="single-stack" key={index}>
+                <img src={tech.url} alt={tech.name} />
+                <p>{tech.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
       <section className="projects" ref={projectsRef}>
         <h1>Projects</h1>
