@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
+import logo from "./assets/db-logo.png";
 
 import "./App.css";
 
 function App() {
+  const homeRef = useRef(null);
   const technologyRef = useRef(null);
   const projectsRef = useRef(null);
   const aboutRef = useRef(null);
@@ -14,8 +16,37 @@ function App() {
 
   return (
     <div className="App">
-      <section className="hero">
-        <header></header>
+      <section className="hero" ref={homeRef}>
+        <header>
+          <div className="logo" onClick={() => scrollToRef(homeRef)}>
+            <img src={logo} alt="logo" />
+          </div>
+          <nav>
+            <ul>
+              <li onClick={() => scrollToRef(technologyRef)}>Technology</li>
+            </ul>
+            <ul>
+              <li onClick={() => scrollToRef(projectsRef)}>Projects</li>
+            </ul>
+            <ul>
+              <li onClick={() => scrollToRef(aboutRef)}>About Me</li>
+            </ul>
+            <ul>
+              <li onClick={() => scrollToRef(contactRef)}>Contact Me</li>
+            </ul>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/GucciHepcat52"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
         <div className="hero-inner">
           <p className="hero-subheading">Hi, I'm Dallin Breen.</p>
           <div className="hero-heading"></div>
