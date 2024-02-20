@@ -4,7 +4,7 @@ import resumePDF from "./assets/dallin-breen-resume.pdf";
 import html from "./assets/tech-logos/html-logo.png";
 import css from "./assets/tech-logos/css-logo.png";
 import js from "./assets/tech-logos/js-logo.png";
-import react from "./assets/tech-logos/react-logo.png";
+import react from "./assets/tech-logos/react-logo.webp";
 import express from "./assets/tech-logos/express-js.png";
 import node from "./assets/tech-logos/nodejs-logo.png";
 import spring from "./assets/tech-logos/spring-logo.png";
