@@ -27,6 +27,11 @@
   padding: 2rem 0 0;
   top: 0;
   left: 5vw;
+  opacity: 0;
+}
+
+.hero header {
+  animation: fadeIn 0.5s ease-in-out 1.5s forwards;
 }
 
 .logo {
@@ -82,6 +87,7 @@ ul:last-of-type li a:hover {
   letter-spacing: -0.9px;
   margin: 0 0 1rem;
   transform-origin: 0%;
+  animation: fadeInUp 0.5s ease-in-out;
 }
 
 .hero-inner .hero-heading {
@@ -92,10 +98,12 @@ ul:last-of-type li a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  animation: fadeInUp 0.75s ease-in-out;
 }
 
 .hero-inner .hero-intro {
   text-align: center;
+  animation: fadeInUp 1s ease-in-out;
 }
 
 .hero-inner .hero-links {
@@ -116,6 +124,7 @@ ul:last-of-type li a:hover {
   transition: background-color 0.3s, color 0.3s;
   height: 3rem;
   line-height: 3rem;
+  animation: fadeInUp 1.5s ease-in-out;
 }
 
 .hero-links button {
@@ -152,6 +161,26 @@ ul:last-of-type li a:hover {
 }
 
 .contact-me {
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (min-width: 800px) {
