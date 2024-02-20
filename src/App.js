@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import logo from "./assets/db-logo.png";
+import resumePDF from "./assets/dallin-breen-resume.pdf";
 
 import "./App.css";
 
@@ -48,13 +49,22 @@ function App() {
           </nav>
         </header>
         <div className="hero-inner">
-          <p className="hero-subheading">Hi, I'm Dallin Breen.</p>
-          <div className="hero-heading"></div>
+          <p className="hero-subheading">Hi, I'm Dallin Breen. I am a </p>
+          <div className="hero-heading">
+            <h1>Software Developer</h1>
+          </div>
           <p className="hero-intro">
             I build effective and efficient technology, designed to help the
             world become a better place!
           </p>
-          <div className="hero-links"></div>
+          <div className="hero-links">
+            <button onClick={() => scrollToRef(projectsRef)}>
+              My Projects
+            </button>
+            <a download="dallin-breen-resume.pdf" href={resumePDF}>
+              Resume
+            </a>
+          </div>
         </div>
       </section>
       <section className="technology" ref={technologyRef}>

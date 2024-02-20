@@ -13,7 +13,6 @@
   align-items: center;
   height: 30rem;
   width: 100%;
-  padding: 9rem 0 0;
   background: linear-gradient(to top, #292c37, #ff8c42);
 }
 
@@ -62,9 +61,88 @@ ul:last-of-type li a {
   color: white;
   border: 2px solid black;
   padding: 1rem 1.5rem;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 0.3rem;
+}
+
+ul:last-of-type li a:hover {
+  background-color: #292c37;
+  color: white;
+}
+
+.hero-inner {
+  max-width: fit-content;
+  margin: auto;
+  color: white;
+}
+
+.hero-inner .hero-subheading {
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: -0.9px;
+  margin: 0 0 1rem;
+  transform-origin: 0%;
+}
+
+.hero-inner .hero-heading {
+  max-width: 90vw;
+  margin: 0 auto 2rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-inner .hero-intro {
+  text-align: center;
+}
+
+.hero-inner .hero-links {
+  max-width: fit-content;
+  margin: auto;
+  position: relative;
+}
+
+.hero-links button,
+.hero-links a {
+  font-family: "Fira Code", monospace;
+  display: inline-block;
+  border: 2px solid #292c37;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.hero-links button {
+  background-color: white;
+  color: black;
+  box-shadow: 3px 3px #292c37;
+  margin: 2rem 2rem 0 0;
+  cursor: pointer;
+  padding: 0 1.5rem;
+}
+
+.hero-links a {
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0 2rem 1rem 0;
+  padding: 0 1.5rem;
+}
+
+.hero-links button:hover {
+  background-color: #292c37;
+  color: white;
+  box-shadow: none;
 }
 
 .technology {
+  background-color: lightgray;
+  padding: 4rem 0;
 }
 
 .projects {
