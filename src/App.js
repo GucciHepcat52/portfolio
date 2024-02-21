@@ -22,8 +22,8 @@ function App() {
     { url: react, name: "React" },
     { url: express, name: "Express" },
     { url: node, name: "Node" },
-    { url: spring, name: "Spring" },
     { url: java, name: "Java" },
+    { url: spring, name: "Spring" },
     { url: postgresql, name: "PostgreSQL" },
     { url: aws, name: "AWS" },
   ];
