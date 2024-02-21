@@ -165,8 +165,59 @@ function App() {
             </div>
           </div>
           <div className="projects-container">
-            <div className="project"></div>
-            <div className="project"></div>
+            <div className="project">
+              <h1>Gamerank</h1>
+              <p>
+                Gamerank is a site built for gamers. Discover, track, and
+                download the worlds top games.
+              </p>
+              <div className="tags">
+                <span>React.js</span>
+                <span>Express.js</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div className="project-buttons">
+                <a
+                  href="https://www.linkedin.com/feed/update/urn:li:activity:6925955098640596992/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>Site Demo</button>
+                </a>
+                <a
+                  href="https://github.com/GucciHepcat52/Gamerank"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>Source Code</button>
+                </a>
+              </div>
+            </div>
+            <div className="project">
+              <h1>Breen Chat</h1>
+              <p>Built a family chat app using React.js and Google Firebase.</p>
+              <div className="tags">
+                <span>React.js</span>
+                <span>Google Firebase</span>
+              </div>
+              <div className="project-buttons">
+                <a
+                  href="https://www.linkedin.com/feed/update/urn:li:activity:6938962298598281216/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>App Demo</button>
+                </a>
+                <a
+                  href="https://github.com/GucciHepcat52/breen-chat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>Source Code</button>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
