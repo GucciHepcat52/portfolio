@@ -194,7 +194,7 @@ ul:last-of-type li a:hover {
 }
 
 .projects {
-  margin: 1rem 0;
+  margin: 4rem 0;
   width: 100%;
 }
 
@@ -300,13 +300,6 @@ ul:last-of-type li a:hover {
 }
 
 .contact-me {
-}
-
-.technology,
-.projects,
-.about-me,
-.contact-me {
-  padding-top: 5rem; /* Adjust the padding as needed */
 }
 
 @keyframes fadeIn {
