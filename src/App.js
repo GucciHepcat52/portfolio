@@ -118,7 +118,11 @@ function App() {
                 <span>AWS</span>
               </div>
               <div className="project-buttons">
-                <a>
+                <a
+                  href="https://www.hairbymaddykate.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button>Live Site</button>
                 </a>
                 <a
