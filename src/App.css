@@ -17,7 +17,6 @@
 }
 
 .hero header {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -157,7 +156,6 @@ ul:last-of-type li a:hover {
 
 .technology .technology-inner {
   width: 90vw;
-  max-width: var(--laptop);
   margin: auto;
   max-width: 1300px;
 }
@@ -196,12 +194,119 @@ ul:last-of-type li a:hover {
 }
 
 .projects {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.projects .projects-inner {
+  width: 90vw;
+  margin: auto;
+  max-width: 1300px;
+}
+
+.projects-inner h1 {
+  font-size: 1.5rem;
+  margin: 0 0 2rem;
+}
+
+.projects-container {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project {
+  width: 500px;
+  border: 2px solid #292c37;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.project h1 {
+  font-weight: 600;
+  margin: 0 0 3rem;
+}
+
+.project p {
+  letter-spacing: -0.7px;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0 3rem 0 0;
+  margin: 1rem 0 3rem 0rem;
+}
+
+.tags {
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  color: #fff;
+  background-color: grey;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4rem;
+  margin: 0 1rem 0.5rem 0;
+  opacity: 0.6;
+}
+
+.project-buttons a {
+  text-decoration: none;
+}
+
+.project-buttons a:first-child button {
+  box-shadow: 3px 3px #292c37;
+  margin: 0 2rem 1rem 0;
+  cursor: pointer;
+  padding: 0 1.5rem;
+  background: linear-gradient(to top, #292c37, #ff8c42);
+  font-family: "Fira Code", monospace;
+  display: inline-block;
+  border: 2px solid #292c37;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.project-buttons a:last-child button {
+  box-shadow: 3px 3px #292c37;
+  margin: 0 2rem 0 0;
+  padding: 0 1.5rem;
+  cursor: pointer;
+  background-color: black;
+  font-family: "Fira Code", monospace;
+  display: inline-block;
+  border: 2px solid #292c37;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  height: 3rem;
+  line-height: 3rem;
 }
 
 .about-me {
 }
 
 .contact-me {
+}
+
+.technology,
+.projects,
+.about-me,
+.contact-me {
+  padding-top: 5rem; /* Adjust the padding as needed */
 }
 
 @keyframes fadeIn {

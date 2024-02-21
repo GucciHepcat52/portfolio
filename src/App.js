@@ -103,8 +103,72 @@ function App() {
         </div>
       </section>
       <section className="projects" ref={projectsRef}>
-        <h1>Projects</h1>
-        <div className="project"></div>
+        <div className="projects-inner">
+          <h1>PROJECTS</h1>
+          <div className="projects-container">
+            <div className="project">
+              <h1>Hair by Maddy Kate</h1>
+              <p>
+                My wife is a hair stylist. This website was built for her
+                business to help current and future clients find her and book
+                with her easier.
+              </p>
+              <div className="tags">
+                <span>React.js</span>
+                <span>AWS</span>
+              </div>
+              <div className="project-buttons">
+                <a>
+                  <button>Live Site</button>
+                </a>
+                <a
+                  href="https://github.com/GucciHepcat52/hair-by-maddy-kate"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>Source Code</button>
+                </a>
+              </div>
+            </div>
+            <div className="project">
+              <h1>My Money Map</h1>
+              <p>
+                I designed, developed, and deployed a cutting-edge finance
+                application for both Android and iOS platforms for a client.
+                Leveraging React Native, and Firebase technologies, I
+                transformed financial management into a seamless and
+                user-friendly experience that helped the financial situations of
+                it's users by ~70%.
+              </p>
+              <div className="tags">
+                <span>React-Native</span>
+                <span>Google Firebase</span>
+                <span>iOS</span>
+                <span>Android</span>
+              </div>
+              <div className="project-buttons">
+                <a
+                  href="https://apps.apple.com/us/app/my-money-map/id6467692819"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>App Store</button>
+                </a>
+                <a
+                  href="https://github.com/GucciHepcat52/financial_optimist"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>Source Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="projects-container">
+            <div className="project"></div>
+            <div className="project"></div>
+          </div>
+        </div>
       </section>
       <section className="about-me" ref={aboutRef}>
         <h1>About Me</h1>
