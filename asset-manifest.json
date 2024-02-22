@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.796ce99f.css",
+    "main.js": "/portfolio/static/js/main.d75779f7.js",
+    "static/js/787.9f7e4d5a.chunk.js": "/portfolio/static/js/787.9f7e4d5a.chunk.js",
+    "static/media/dallin-breen-resume.pdf": "/portfolio/static/media/dallin-breen-resume.aa7bc2429cef00134584.pdf",
+    "static/media/spring-logo.png": "/portfolio/static/media/spring-logo.1a753d3a09a8df3cec6c.png",
+    "static/media/postgresql.png": "/portfolio/static/media/postgresql.4a8c66c90ba3b5e27f7c.png",
+    "static/media/dallin-breen-profile.jpg": "/portfolio/static/media/dallin-breen-profile.0a547308dac80ad2fa2a.jpg",
+    "static/media/db-logo.png": "/portfolio/static/media/db-logo.d379767e56d4f083bc06.png",
+    "static/media/html-logo.png": "/portfolio/static/media/html-logo.323dab0ccafeb98fae45.png",
+    "static/media/java-logo.png": "/portfolio/static/media/java-logo.66d5a4fef00821dfe115.png",
+    "static/media/css-logo.png": "/portfolio/static/media/css-logo.8ea58d31a9d39dd59031.png",
+    "static/media/react-logo.webp": "/portfolio/static/media/react-logo.2a0cac33f155e4a27216.webp",
+    "static/media/aws-logo.png": "/portfolio/static/media/aws-logo.88cdd0237513af07ae4f.png",
+    "static/media/express-js.png": "/portfolio/static/media/express-js.9b344d7469dbbdc76754.png",
+    "static/media/nodejs-logo.png": "/portfolio/static/media/nodejs-logo.8f912e6eff277ae16489.png",
+    "index.html": "/portfolio/index.html",
+    "main.796ce99f.css.map": "/portfolio/static/css/main.796ce99f.css.map",
+    "main.d75779f7.js.map": "/portfolio/static/js/main.d75779f7.js.map",
+    "787.9f7e4d5a.chunk.js.map": "/portfolio/static/js/787.9f7e4d5a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.796ce99f.css",
+    "static/js/main.d75779f7.js"
+  ]
+}
