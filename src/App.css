@@ -297,10 +297,48 @@ ul:last-of-type li a:hover {
 }
 
 .about-me {
+  border-top: 2px solid black;
+  margin: 5rem 0;
+  padding: 5rem 0rem;
+  width: 100%;
 }
 
-.contact-me {
+.about-me .about-me-inner {
+  width: 90vw;
+  margin: auto;
+  max-width: 1300px;
 }
+
+.about-me-inner h1 {
+  font-size: 1.5rem;
+  margin: 0 0 2rem;
+}
+
+.about-me-container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.about-me-container img {
+  width: 100%;
+  margin: 2rem 6rem 0 0;
+  border-radius: 1rem;
+  border: 2px solid #292c37;
+  box-shadow: 5px 5px #ff8c42;
+}
+
+.about-me-text p {
+  font-size: 1.2rem;
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+  margin: 0 0 2rem;
+}
+
+/* .contact-me {
+} */
 
 @keyframes fadeIn {
   from {

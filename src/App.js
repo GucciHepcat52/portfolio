@@ -11,6 +11,7 @@ import spring from "./assets/tech-logos/spring-logo.png";
 import java from "./assets/tech-logos/java-logo.png";
 import postgresql from "./assets/tech-logos/postgresql.png";
 import aws from "./assets/tech-logos/aws-logo.png";
+import profile from "./assets/dallin-breen-profile.jpg";
 
 import "./App.css";
 
@@ -31,7 +32,7 @@ function App() {
   const technologyRef = useRef(null);
   const projectsRef = useRef(null);
   const aboutRef = useRef(null);
-  const contactRef = useRef(null);
+  // const contactRef = useRef(null);
 
   function scrollToRef(ref) {
     ref.current.scrollIntoView({ behavior: "smooth" });
@@ -54,9 +55,9 @@ function App() {
             <ul>
               <li onClick={() => scrollToRef(aboutRef)}>About Me</li>
             </ul>
-            <ul>
+            {/* <ul>
               <li onClick={() => scrollToRef(contactRef)}>Contact Me</li>
-            </ul>
+            </ul> */}
             <ul>
               <li>
                 <a
@@ -226,13 +227,28 @@ function App() {
         </div>
       </section>
       <section className="about-me" ref={aboutRef}>
-        <h1>About Me</h1>
-        <div className="about-me-container"></div>
+        <div className="about-me-inner">
+          <h1>ABOUT ME</h1>
+          <div className="about-me-container">
+            <img src={profile} alt="profile pic" />
+            <div className="about-me-text">
+              <p>
+                Hi, my name is Dallin Breen, a full-stack software developer
+                from Las Vegas with 3+ years of professional experience in the
+                field. While playing collegiate football, I discovered my
+                passion for software development when I changed my major from
+                Business to Computer Science. Beyond software development, I
+                enjoy spending time with my family, going to the gym, and
+                playing video games.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
-      <section className="contact-me" ref={contactRef}>
+      {/* <section className="contact-me" ref={contactRef}>
         <h1>Contact Me</h1>
         <div className="contact-container"></div>
-      </section>
+      </section> */}
     </div>
   );
 }
