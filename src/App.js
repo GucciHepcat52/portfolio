@@ -237,9 +237,12 @@ function App() {
                 from Las Vegas with 3+ years of professional experience in the
                 field. While playing collegiate football, I discovered my
                 passion for software development when I changed my major from
-                Business to Computer Science. Beyond software development, I
-                enjoy spending time with my family, going to the gym, and
-                playing video games.
+                Business to Computer Science.
+              </p>
+              <br />
+              <p>
+                Beyond software development, I enjoy spending time with my
+                family, going to the gym, and playing video games.
               </p>
             </div>
           </div>

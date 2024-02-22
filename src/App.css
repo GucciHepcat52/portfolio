@@ -76,7 +76,7 @@ ul:last-of-type li a:hover {
 
 .hero-inner {
   max-width: fit-content;
-  margin: auto;
+  /* margin: auto; */
   color: white;
 }
 
@@ -95,6 +95,7 @@ ul:last-of-type li a:hover {
   font-size: 2rem;
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: center;
   flex-direction: column;
   animation: fadeInUp 0.75s ease-in-out;
@@ -138,7 +139,6 @@ ul:last-of-type li a:hover {
 .hero-links a {
   background-color: transparent;
   box-shadow: none;
-  margin: 0 2rem 1rem 0;
   padding: 0 1.5rem;
 }
 
@@ -171,8 +171,9 @@ ul:last-of-type li a:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: auto;
-  column-gap: 4rem;
+  /* column-gap: 4rem; */
   row-gap: 4rem;
+  max-width: 1000px;
 }
 
 .single-stack {
@@ -297,8 +298,8 @@ ul:last-of-type li a:hover {
 }
 
 .about-me {
+  background-color: lightgray;
   border-top: 2px solid black;
-  margin: 5rem 0;
   padding: 5rem 0rem;
   width: 100%;
 }
@@ -316,7 +317,7 @@ ul:last-of-type li a:hover {
 
 .about-me-container {
   width: 100%;
-  max-width: 100%;
+  max-width: 1150px;
   display: flex;
   align-items: center;
   margin: auto;
@@ -324,7 +325,7 @@ ul:last-of-type li a:hover {
 
 .about-me-container img {
   width: 100%;
-  margin: 2rem 6rem 0 0;
+  margin: 0 6rem 0 0;
   border-radius: 1rem;
   border: 2px solid #292c37;
   box-shadow: 5px 5px #ff8c42;
@@ -363,5 +364,24 @@ ul:last-of-type li a:hover {
 @media screen and (min-width: 800px) {
   .hero {
     min-height: 30rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    height: 35rem;
+  }
+
+  .hero header nav {
+    display: none;
+  }
+
+  .about-me-container {
+    flex-direction: column;
+  }
+
+  .about-me-container img {
+    margin: 2rem 0 0;
+    margin-bottom: 2rem;
   }
 }
