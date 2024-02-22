@@ -1,4 +1,7 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
+import { Button } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import logo from "./assets/db-logo.png";
 import resumePDF from "./assets/dallin-breen-resume.pdf";
 import html from "./assets/tech-logos/html-logo.png";
@@ -33,9 +36,15 @@ function App() {
   const projectsRef = useRef(null);
   const aboutRef = useRef(null);
   // const contactRef = useRef(null);
+  const [menuVisible, setMenuVisible] = useState(false);
 
   function scrollToRef(ref) {
     ref.current.scrollIntoView({ behavior: "smooth" });
+    setMenuVisible(false);
+  }
+
+  function handleMenu() {
+    setMenuVisible((prevVal) => !prevVal);
   }
 
   return (
@@ -45,31 +54,64 @@ function App() {
           <div className="logo" onClick={() => scrollToRef(homeRef)}>
             <img src={logo} alt="logo" />
           </div>
-          <nav>
-            <ul>
-              <li onClick={() => scrollToRef(technologyRef)}>Technology</li>
-            </ul>
-            <ul>
-              <li onClick={() => scrollToRef(projectsRef)}>Projects</li>
-            </ul>
-            <ul>
-              <li onClick={() => scrollToRef(aboutRef)}>About Me</li>
-            </ul>
-            {/* <ul>
+          <div className="menu">
+            <Button onClick={handleMenu} style={{ color: "white" }}>
+              {menuVisible ? <CloseIcon /> : <MenuIcon />}
+            </Button>
+          </div>
+          {menuVisible ? (
+            <nav className="menu-list">
+              <ul>
+                <li onClick={() => scrollToRef(technologyRef)}>Technology</li>
+              </ul>
+              <ul>
+                <li onClick={() => scrollToRef(projectsRef)}>Projects</li>
+              </ul>
+              <ul>
+                <li onClick={() => scrollToRef(aboutRef)}>About Me</li>
+              </ul>
+              {/* <ul>
               <li onClick={() => scrollToRef(contactRef)}>Contact Me</li>
             </ul> */}
-            <ul>
-              <li>
-                <a
-                  href="https://github.com/GucciHepcat52"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
-              </li>
-            </ul>
-          </nav>
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/GucciHepcat52"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          ) : (
+            <nav>
+              <ul>
+                <li onClick={() => scrollToRef(technologyRef)}>Technology</li>
+              </ul>
+              <ul>
+                <li onClick={() => scrollToRef(projectsRef)}>Projects</li>
+              </ul>
+              <ul>
+                <li onClick={() => scrollToRef(aboutRef)}>About Me</li>
+              </ul>
+              {/* <ul>
+              <li onClick={() => scrollToRef(contactRef)}>Contact Me</li>
+            </ul> */}
+              <ul>
+                <li>
+                  <a
+                    href="https://github.com/GucciHepcat52"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          )}
         </header>
         <div className="hero-inner">
           <p className="hero-subheading">Hi, I'm Dallin Breen. I am a </p>

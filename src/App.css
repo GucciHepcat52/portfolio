@@ -44,6 +44,10 @@
   height: auto;
 }
 
+.menu {
+  display: none;
+}
+
 .hero header nav {
   display: flex;
   align-items: center;
@@ -257,6 +261,7 @@ ul:last-of-type li a:hover {
   border-radius: 4rem;
   margin: 0 1rem 0.5rem 0;
   opacity: 0.6;
+  z-index: -1;
 }
 
 .project-buttons a {
@@ -372,8 +377,41 @@ ul:last-of-type li a:hover {
     height: 35rem;
   }
 
+  .hero header .menu {
+    display: block;
+  }
+
   .hero header nav {
     display: none;
+  }
+
+  .hero header .menu-list {
+    position: absolute;
+    background-color: lightgray;
+    width: 80%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 6rem 0 0;
+    z-index: 2;
+    border: 2px solid #292c37;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  ul li {
+    color: black;
+  }
+
+  ul:last-of-type li a,
+  ul:last-of-type li a:hover {
+    all: initial;
+    color: black;
+    font-family: "Fira Code", monospace;
+    font-size: 16px;
   }
 
   .about-me-container {
